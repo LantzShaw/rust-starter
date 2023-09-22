@@ -1,9 +1,9 @@
 use std::{collections::btree_map::Values, io::stdout};
 
 fn main() {
-    let stdout = std::io::stdout();
+    // let stdout = std::io::stdout();
 
-    const NAME: usize = 20;
+    // const NAME: usize = 20;
 
     println!("Hello, world!");
 
@@ -56,4 +56,30 @@ fn main() {
     // let mut arr_3 = [3, 89, "Lantz"];
 
     println!("{}", arr.len());
+
+    say_hello();
+}
+
+fn say_hello() {
+    println!("hello world");
+
+    click_hello(32);
+}
+
+fn click_hello(num: i32) {
+    println!("click world {}", num);
+}
+
+fn add_user(user: &str) {
+    println!("hello world");
+}
+
+fn getUser(user: &str) -> &str {
+    println!("user");
+
+    return "hello world";
+}
+
+fn create() -> &str {
+    println!("hell rust");
 }
